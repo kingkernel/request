@@ -1,0 +1,19 @@
+{
+    "name": "kingkernel/request",
+    "description": "Blblioteca php paar lidar e manipular as requisições do protocolo HTTP",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kingkernel\\Request\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Daniel José dos Santos",
+            "email": "daniel.santos.ap@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
