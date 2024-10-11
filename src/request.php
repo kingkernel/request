@@ -68,4 +68,3 @@ class Request
         return $_SERVER['REQUEST_METHOD'];
     }
 }
-print_r(Request::getVerbMethod());
