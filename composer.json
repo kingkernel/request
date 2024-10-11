@@ -1,6 +1,6 @@
 {
     "name": "kingkernel/request",
-    "description": "Blblioteca php paar lidar e manipular as requisições do protocolo HTTP",
+    "description": "Blblioteca php para lidar e manipular as requisições do protocolo HTTP",
     "type": "library",
     "license": "MIT",
     "autoload": {
