@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Kingkernel\\Request\\": "src/"
+            "Kingkernel\\": "src/"
         }
     },
     "authors": [
