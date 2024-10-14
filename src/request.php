@@ -7,6 +7,7 @@ namespace Kingkernel;
 class Request 
 {
     public $verb;
+    public $header = '';
     public function  __construct()
     {
         $this->verb = $_SERVER['REQUEST_METHOD'];
@@ -36,6 +37,7 @@ class Request
         foreach ($strQueryString as $value) {
             $arrUrlParams[explode('=', $value)[0]] = explode('=', $value)[1];
         }
+        header('Content-Type: application/json');
         return $arrUrlParams;
     }
     /**
@@ -45,7 +47,7 @@ class Request
      * @author: Daniel Hogans
      * @email: daniel.santos.ap@gmail.com
      */
-    public static function getInParams(string $paramName)
+    public static function getInParams(string $paramName): string
     {
         $arrParams = [];
         foreach (self::getParams() as $arrayItem) {
